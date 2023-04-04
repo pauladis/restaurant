@@ -17,6 +17,8 @@ class CategoriesSerializer(serializers.ModelSerializer):
 
 
 class MenuItemSerializer(serializers.ModelSerializer):
+    categorie_id = CategoriesSerializer()
+
     class Meta:
         model = MenuItem
         fields = '__all__'

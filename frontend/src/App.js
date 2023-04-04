@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Menu from "./Menu";
-import Categories from "./Categories";
+import Categories from "./components/Categories";
 import logo from "./logo.svg";
 import Axios from 'axios';
 

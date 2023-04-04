@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Cart from "./components/Cart";
+import Categories from "./components/Categories";
 
 const Menu = ({ items, categories }) => {
   const [cartItems, setCartItems] = useState([]);
@@ -50,7 +51,8 @@ const removeFromCart = (item) => {
         style={{ width: showModal ? '70%' : '100%' }}
       >
         {items.map((menuItem) => {
-          const { id, name, price, picture, description } = menuItem;
+          const { id, name, price, picture, categorie_id , description} = menuItem;
+          const { name: categorie_idName } = categorie_id.id;
           return (
             <article
               key={id}
@@ -64,6 +66,7 @@ const removeFromCart = (item) => {
                   <h4 className="price"> ${price} </h4>
                 </header>
                 <h1>{description}</h1>
+                <p className="item-text">{categorie_idName}</p>
               </div>
             </article>
           );
