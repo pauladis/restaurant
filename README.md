@@ -64,7 +64,14 @@ the frontend and backend are 2 distinct apps, with nothing in common, they commu
 
 ## How I Would recommend to test this app:
 
-go into http://localhost:8000/admin, login with admin/admin, or create a custom superuser, insert a few items and categories trough the admin page/API, only then, go to localhost and enjoy the app
+once the container is running, open a terminal e follow this steps:
+
+    docker exec -it checkout_order_backend_1 bash
+    python manage.py createsuperuser
+    -- fill the form
+
+    go into http://localhost:8000/admin
+    insert a few items and categories trough the admin page/API, only then, go to localhost and enjoy the app
 
 
 
@@ -79,11 +86,11 @@ might have some bugs, especially with the .css
 
 PS: if your adminpage doesn't load the staticfiles on launch, you might need to give permission or try this solution:
 
-open terminal
-docker exec -it checkout_order_1 bash
-python manage.py collectstatic  
-exit
-docker-compose up --build
+    open terminal
+    docker exec -it checkout_order_1 bash
+    python manage.py collectstatic  
+    exit
+    docker-compose up --build
 
 
 if you find any issues running this app, please contact me at raultq1@hotmail.com and I will be glad to help troubleshot
