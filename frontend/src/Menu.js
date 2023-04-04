@@ -50,8 +50,7 @@ const removeFromCart = (item) => {
         style={{ width: showModal ? '70%' : '100%' }}
       >
         {items.map((menuItem) => {
-          const { id, name, price, picture, categorie_id } = menuItem;
-          const { name: categorie_idName } = categorie_id.id;
+          const { id, name, price, picture, description } = menuItem;
           return (
             <article
               key={id}
@@ -64,7 +63,7 @@ const removeFromCart = (item) => {
                   <h4>{name} </h4>
                   <h4 className="price"> ${price} </h4>
                 </header>
-                <p className="item-text">{categorie_idName}</p>
+                <h1>{description}</h1>
               </div>
             </article>
           );
