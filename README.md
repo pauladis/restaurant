@@ -1,8 +1,8 @@
-# restaurant
+## restaurant
 study case using docker - Django - React - Postgres
 
 
-#How to use
+# How to use
 
 clone the repo
 docker-compose build
@@ -15,12 +15,12 @@ http://localhost <- front
 http://localhost:8000 <- back
 
 
-#How it works
+# How it works
 
 the frontend and backend are 2 distinct apps, with nothing in common, they communicate beetween themselfs trought APIs call only
 
 
-#SWAGGER
+# SWAGGER
 
     GET         http://localhost:8000/item/
     GET         http://localhost:8000/item/<id>
@@ -62,14 +62,14 @@ the frontend and backend are 2 distinct apps, with nothing in common, they commu
     }
 
 
-#How I Would recommend to test this app:
+# How I Would recommend to test this app:
 
 go into http://localhost:8000/admin, login with admin/admin, or create a custom superuser, insert a few items and categories trough the admin page/API, only then, go to localhost and enjoy the app
 
 
 
 
-#TODO
+# TODO
 
 add tests
 handle exceptions on backend server

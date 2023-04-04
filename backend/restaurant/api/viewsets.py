@@ -33,6 +33,7 @@ class OrderViewSet(ModelViewSet):
 class OrderItemViewSet(ModelViewSet):
     queryset = OrderItem.objects.all()
     serializer_class = OrderItemSerializer
+    # TODO add the accepted methods for each endpoint
     # http_method_names = []
 
     #POST
