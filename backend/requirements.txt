@@ -1,0 +1,13 @@
+asgiref==3.6.0
+Django==3.2
+django-cors-headers==3.14.0
+djangorestframework==3.14.0
+gevent==22.10.2
+greenlet==2.0.2
+gunicorn==20.1.0
+Pillow==9.5.0
+psycopg2-binary==2.9.5
+pytz==2023.2
+sqlparse==0.4.3
+zope.event==4.6
+zope.interface==6.0
