@@ -33,7 +33,7 @@ the frontend and backend are 2 distinct apps, with nothing in common, they commu
         description: str,
         price: float
         picture: str(url),
-        categorie_id: int
+        categorie_id: {categorie obj} or id
         }
     
 
