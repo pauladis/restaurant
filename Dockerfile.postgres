@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+ENTRYPOINT ["sh", "-c", "chown -R 2000:2000 /var/lib/postgresql/data && docker-entrypoint.sh postgres"]
+
+ENV POSTGRES_DB=postgres \
+    POSTGRES_USER=postgres \
+    POSTGRES_PASSWORD=postgres
+
+VOLUME /var/lib/postgresql/data
