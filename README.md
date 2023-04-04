@@ -2,6 +2,12 @@
 study case using docker - Django - React - Postgres
 
 
+## pre requisites
+
+docker
+docker-compose
+npm > 13
+
 ## How to use
 
 clone the repo
@@ -74,6 +80,12 @@ once the container is running, open a terminal e follow this steps:
     insert a few items and categories trough the admin page/API, only then, go to localhost and enjoy the app
 
 
+## saved data
+
+all the saved data necessary for the app will be presented on a volume called backup_data/db
+you access trought the admin page(which I recommend) or connect to the postgress image that will be running with your DB manager of choice(DBeaver ...)
+all the information for that will can be found on settings.py or at the docker-compose.yml
+
 
 
 ## TODO
@@ -81,6 +93,7 @@ once the container is running, open a terminal e follow this steps:
 add tests
 handle exceptions on backend server
 might have some bugs, especially with the .css
+add security features like removiing the secret from settings.py and so on
 
 
 
