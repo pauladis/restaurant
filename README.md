@@ -9,10 +9,10 @@ docker-compose build
 docker-compose up
 
 
-#entrypoint for access
+## entrypoint for access
 
-http://localhost <- front
-http://localhost:8000 <- back
+    http://localhost <- front
+    http://localhost:8000 <- back
 
 
 ## How it works
