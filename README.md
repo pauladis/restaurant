@@ -22,11 +22,11 @@ the frontend and backend are 2 distinct apps, with nothing in common, they commu
 
 #SWAGGER
 
-GET         http://localhost:8000/item/
-GET         http://localhost:8000/item/<id>
+    GET         http://localhost:8000/item/
+    GET         http://localhost:8000/item/<id>
 
-POST        http://localhost:8000/item/ 
-PUT, PATCH  http://localhost:8000/item/<id> 
+    POST        http://localhost:8000/item/ 
+    PUT, PATCH  http://localhost:8000/item/<id> 
 
     payload = {
         name:str,
@@ -37,11 +37,11 @@ PUT, PATCH  http://localhost:8000/item/<id>
         }
     
 
-GET             http://localhost:8000/orders/
-GET             http://localhost:8000/orders/<id>
+    GET             http://localhost:8000/orders/
+    GET             http://localhost:8000/orders/<id>
 
-POST            http://localhost:8000/orders/ 
-PUT, PATCH      http://localhost:8000/orders/<id>
+    POST            http://localhost:8000/orders/ 
+    PUT, PATCH      http://localhost:8000/orders/<id>
 
     payload = {
         total: totalPrice,
@@ -49,11 +49,11 @@ PUT, PATCH      http://localhost:8000/orders/<id>
     }
 
 
-GET         http://localhost:8000/itemdetails/
-GET         http://localhost:8000/itemdetails/<id>
+    GET         http://localhost:8000/itemdetails/
+    GET         http://localhost:8000/itemdetails/<id>
 
-POST        http://localhost:8000/itemdetails/ 
-PUT, PATCH  http://localhost:8000/itemdetails/<id> 
+    POST        http://localhost:8000/itemdetails/ 
+    PUT, PATCH  http://localhost:8000/itemdetails/<id> 
     
     payload = {
         item_id: int,
