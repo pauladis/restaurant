@@ -3,7 +3,7 @@ import { FaTrash, FaPlus, FaMinus } from 'react-icons/fa';
 import './Cart.css';
 import Payment from './Payment';
 
-const Cart = ({ showModal, setShowModal, cartItems, removeFromCart, increaseQuantity, decreaseQuantity }) => {
+const Cart = ({ showModal, setShowModal, cartItems, removeFromCart, increaseQuantity, decreaseQuantity, setCartItems }) => {
   const modalRef = useRef();
   const [showPaymentModal, setShowPaymentModal] = useState(false);
 
@@ -57,6 +57,7 @@ const Cart = ({ showModal, setShowModal, cartItems, removeFromCart, increaseQuan
         setShowPaymentModal={setShowPaymentModal}
         totalPrice={totalPrice.toFixed(2)}
         cartItems={cartItems}
+        setCartItems={setCartItems}
       />
     </>
   );

@@ -82,6 +82,7 @@ const removeFromCart = (item) => {
         removeFromCart={removeFromCart}
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
+        setCartItems={setCartItems}
       />
     </>
   );

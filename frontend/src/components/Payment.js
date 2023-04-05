@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Payment.css';
 import Axios from 'axios';
 
-const Payment = ({ showPaymentModal, setShowPaymentModal, totalPrice, cartItems }) => {
+const Payment = ({ showPaymentModal, setShowPaymentModal, totalPrice, cartItems, setCartItems }) => {
 
     const [customerName, setCustomerName] = useState("")
     const [creditCardNumber, setcreditCardNumber] = useState("")
@@ -33,6 +33,7 @@ const Payment = ({ showPaymentModal, setShowPaymentModal, totalPrice, cartItems 
                 console.error(error)
               })
           })
+        setCartItems([])
         }
 
     const handlePayment = () => {
