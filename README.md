@@ -28,6 +28,8 @@ the frontend and backend are 2 distinct apps, with nothing in common, they commu
 
 ## SWAGGER
 
+Not every endpoint is being used for the App in the moment, but I let the endpoints ready in case I wanna upgrade this project later
+
     GET         http://localhost:8000/item/
     GET         http://localhost:8000/item/<id>
 
@@ -83,7 +85,7 @@ once the container is running, open a terminal e follow this steps:
 ## saved data
 
 all the saved data necessary for the app will be presented on a volume called backup_data/db
-you access trought the admin page(which I recommend) or connect to the postgress image that will be running with your DB manager of choice(DBeaver ...)
+you access trought the admin page(which I recommend) or connect to the postgress image that will be running with your DB manager of choice(DBeaver, DataGrip, snowflake and so on)
 all the information for that will can be found on settings.py or at the docker-compose.yml
 
 
@@ -97,10 +99,10 @@ add security features like removiing the secret from settings.py and so on
 
 
 
-PS: if your adminpage doesn't load the staticfiles on launch, you might need to give permission or try this solution:
+PS: if your adminpage doesn't load the staticfiles on launch, the app might be lacking permission to modify a few files, you can either give permission where is due or try this solution:
 
     open terminal
-    docker exec -it checkout_order_1 bash
+    docker exec -it checkout_order_backend_1 bash
     python manage.py collectstatic  
     exit
     docker-compose up --build
