@@ -10,9 +10,9 @@ npm > 13
 
 ## How to use
 
-clone the repo
-docker-compose build
-docker-compose up
+    clone the repo
+    docker-compose build
+    docker-compose up
 
 
 ## entrypoint for access
