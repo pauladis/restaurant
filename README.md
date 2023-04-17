@@ -4,9 +4,9 @@ study case using docker - Django - React - Postgres
 
 ## pre requisites
 
-docker
-docker-compose
-npm > 13
+    docker
+    docker-compose
+    npm > 13
 
 ## How to use
 
